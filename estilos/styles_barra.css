@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0px;
+    /*background: url(https://3er1viui9wo30pkxh1v2nh4w-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/41/2021/01/BnD_Microsoft-EOY-Graphic.jpg);*/
+    background-color: rgb(19, 160, 241);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    background-color: rgb(4, 47, 126);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav{
+    display: flex;/*Mover el icono a la izquierda y las opciones hacia la derecha*/
+    justify-content: space-between;/*Mover el icono a la izquierda y las opciones hacia la derecha*/
+
+    max-width: 992px;
+}
+.nav-link{
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex; /*Poner en horizontal las opciones*/
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10PX;/*ABAJO IZQ-DER*/
+    line-height: 80PX; /*cENTRAR DE MANERA VERTICAL*/
+    text-transform: uppercase;/*Cambio a mayusculas*/
+    width: max-content;/*Para no cortar las letras cuando ya no alcance a mostrarse las palabras de la barra de navegación*/
+}
+.nav-menu-link{
+    padding: 8px 12px; /*arriba-abajopx  izq-derpx*/
+    border-radius: 3px;
+}
+.nav-menu-link:hover,
+.nav-menu-link_active{
+background-color: rgb(7, 127, 224);
+transition: 0.5s;
+}
+.componerSalto{/*Clase para limipiar el estilo*/
+    clear:both;
+    }
+.img1{
+    width: 300px;
+    height: 250px;
+}
+.padre {
+    margin: 200px;
+    height: 150px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hijo {
+    width: 800px;
+    text-align: center;
+  }
+  .padre .hijo h1{
+      color: rgb(0, 2, 122);
+      margin: 15px;
+  }
+  .padre .hijo p{
+    font-size: 20px;
+  }
+
